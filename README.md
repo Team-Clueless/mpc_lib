@@ -64,37 +64,17 @@ sudo bash install_ipopt.sh ./include/Ipopt-3.12.7
 
 ### Plant Model
 
-> <br>
->
-> **Dynamics**
->
-> $x_{t+1} = x_t + v_t\cos(\theta)\cdot dt$
->
-> $y_{t+1} = y_t = v_t\sin(\theta)\cdot dt$
->
-> $\theta_{t+1} = \theta_t + \omega \cdot dt$
->
-> $v_{t+1} = v_t + a_t \cdot dt$
->
-> $d_{t+1} = g(x_t) - y_t + v_t\sin(\eta) \cdot dt\ \ \ \ \ \ \ \ \ \ \ \ \left\{Cross\ track\ error\right\}$
->
-> $\eta_{t+1} = \theta_t - \theta_t^* + \omega \cdot dt\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \left\{Orientation\ error\right\}$
->
-> **Constraints**
->
-> $\omega \in [\ -3,\ 3\ ]$
->
-> $a \in [\ -1,\ 1\ ]$
->
-> **Cost function**
->
-> $\Psi(s)\ =\ \sum_{t=0}^{N} \left[\ w_v||\ v_t - v_t^{ref}\ ||^2 + w_d||\ d_t\ ||^2 + w_{\eta}||\ \eta_t\ ||^2\ \right]$
->
-> $\ \ \ \ \ \ \ \ \ \ \ +\ \sum_{t=1}^{N - 1} \left[\ w_{\omega}||\ \omega_t\ ||^2 + w_a||\ a_t\ ||^2\ \right]$
->
-> $\ \ \ \ \ \ \ \ \ \ \ +\  \sum_{t=2}^{N - 1} \left[\ w_{\dot{\omega}}||\ \omega_t - \omega_{t - 1}\ ||^2 + w_{\dot{a}}||\ a_t - a_{t-1}\ ||^2\ \right]$
->
-> <br>
+**Dynamics**
+
+![](assets/002.png)
+
+**Constraints**
+
+![](assets/003.png)
+
+**Cost function**
+
+![](assets/004.png)
 
 ### MPC Preprocessing
 
