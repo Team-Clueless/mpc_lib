@@ -4,6 +4,8 @@
     <version>0.0.0</version>
     <description>The mpc_lib package</description>
 
+    <maintainer email="abhihota025@gmail.com">Abhijit Hota</maintainer>
+    <maintainer email="ankitkumarpal27@gmail.com">Ankit Kumar Pal</maintainer>
     <maintainer email="ashwin5059198@gmail.com">Ashwin A Nayar</maintainer>
 
     <license>BSD</license>
@@ -14,7 +16,11 @@
     <!-- Example: -->
     <!-- <url type="website">http://wiki.ros.org/virat_gazebo</url> -->
 
+    <author email="abhihota025@gmail.com">Abhijit Hota</author>
+    <author email="ankitkumarpal27@gmail.com">Ankit Kumar Pal</author>
     <author email="ashwin5059198@gmail.com">Ashwin A Nayar</author>
+
+
 
 
     <!-- The *depend tags are used to specify dependencies -->
