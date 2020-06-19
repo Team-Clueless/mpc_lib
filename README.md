@@ -1,3 +1,5 @@
+[![alt text](https://img.shields.io/badge/status-stable-green.svg)](https://shields.io/)
+
 # mpc_lib
 
 Main library for implementation of Model Predictive Control system.
