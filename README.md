@@ -52,14 +52,19 @@ sudo bash install_ipopt.sh ./include/Ipopt-3.12.7
 **Setup** :
 
 &nbsp;&nbsp;&nbsp;&nbsp;1. Define length of prediction horizon, _N_, and duration of each timestep, _dt_.
+
 &nbsp;&nbsp;&nbsp;&nbsp;2. Define vehicle dynamics and actuator limitations along with other constraints.
+
 &nbsp;&nbsp;&nbsp;&nbsp;3. Define cost function
 
 **Loop** :
 
 &nbsp;&nbsp;&nbsp;&nbsp;1. Pass current state as initial state to model predictive controller.
+
 &nbsp;&nbsp;&nbsp;&nbsp;2. Call the optimization solver (we used _Ipopt_). It will return a vector of control inputs that minimizes the cost function.
+
 &nbsp;&nbsp;&nbsp;&nbsp;3. Apply first control imput to vehicle.
+
 &nbsp;&nbsp;&nbsp;&nbsp;4. Back to 1
 
 ### Plant Model
