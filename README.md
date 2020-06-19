@@ -69,6 +69,8 @@ sudo bash install_ipopt.sh ./include/Ipopt-3.12.7
 
 ### Plant Model
 
+![](assets/005.jpg)
+
 **Dynamics**
 
 ![](assets/002.png)
