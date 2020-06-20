@@ -114,6 +114,10 @@ double cte = coeffs[0];
 double etheta = -atan(coeffs[1]);
 ```
 
+## Performance
+
+![](assets/006.png)
+
 ## References
 
 [Starter code : Udacity Model Predictive Control (MPC) Project](https://github.com/udacity/CarND-MPC-Project)
