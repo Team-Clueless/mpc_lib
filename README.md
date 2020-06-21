@@ -65,25 +65,29 @@ sudo bash install_ipopt.sh ./include/Ipopt-3.12.7
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. Call the optimization solver (we used _Ipopt_). It will return a vector of control inputs that minimizes the cost function.
 
-&nbsp;&nbsp;&nbsp;&nbsp;3. Apply first control imput to vehicle.
+&nbsp;&nbsp;&nbsp;&nbsp;3. Apply first control input to vehicle.
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. Back to 1
+
+![](assets/007.png)
 
 ### Plant Model
 
 ![](assets/005.jpg)
 
-**Dynamics**
-
-![](assets/002.png)
-
-**Constraints**
-
-![](assets/003.png)
-
-**Cost function**
-
-![](assets/004.png)
+> <br>
+>
+> **Dynamics**
+>
+> ![](assets/002.png)
+>
+> **Constraints**
+>
+> ![](assets/003.png)
+>
+> **Cost function**
+>
+> ![](assets/004.png)
 
 ### MPC Preprocessing
 
