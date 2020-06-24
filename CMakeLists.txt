@@ -123,7 +123,8 @@ include_directories(
 link_directories(/usr/local/lib)
 
 ## Declare a C++ library
-add_library(${PROJECT_NAME} src/MPC.cpp)
+add_library(${PROJECT_NAME} src/dDrive_MPC.cpp)
+add_library(mpcUtils src/utils.cpp)
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
@@ -148,7 +149,7 @@ add_library(${PROJECT_NAME} src/MPC.cpp)
 ## Specify libraries to link a library or executable target against
 
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ipopt)
-
+target_link_libraries(mpcUtils ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############
